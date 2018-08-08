@@ -1,0 +1,60 @@
+{
+    "name": "trk/luya-uikit-kickstarter",
+    "description": "The uikit kickstarter project for a new LUYA application (use only uikit content blocks).",
+    "type": "luya-uikit-kickstarter",
+    "license":"MIT",
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../../packages/trk-luya-uikit"
+        },
+        {
+            "type": "path",
+            "url": "../../packages/trk-luya-theme"
+        }
+    ],
+    "require": {
+        "luyadev/luya-core" : "dev-master",
+        "luyadev/luya-module-admin" : "dev-master",
+        "luyadev/luya-module-cms" : "dev-master",
+        "luyadev/luya-module-errorapi": "dev-master",
+        "trk/luya-uikit" : "dev-master",
+        "trk/luya-theme" : "dev-master"
+    },
+    "require-dev": {
+        "yiisoft/yii2-gii" : "~2.0.0",
+        "yiisoft/yii2-debug" : "~2.0.0",
+        "luyadev/luya-testsuite" : "~1.0.0"
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "public_html/assets": "0777",
+                    "public_html/storage": "0777",
+                    "runtime" : "0777"
+                }
+            ]
+        },
+        "asset-installer-paths": {
+            "bower-asset-library": "vendor/bower"
+        },
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "fxp-asset" : {
+            "pattern-skip-version": "(-build|-patch)",
+            "installer-paths": {
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    }
+}
+
