@@ -1,0 +1,89 @@
+// Name: UIkit
+// Background: White
+// Color: Blue
+// Type: Flat
+
+//
+// Variables
+//
+
+@images-path:                         '../images/';
+
+//
+// Import Uikit Frontend Framework
+//
+
+@import (optional) "../node_modules/uikit/src/less/uikit.less";
+@import (optional) "node_modules/uikit/src/less/uikit.less";
+@import (optional) "../bower_components/uikit/src/less/uikit.less";
+@import (optional) "bower_components/uikit/src/less/uikit.less";
+
+//
+// Import Master Theme
+//
+
+@import "master/_import.less";
+
+//
+// Uikit Variable Overwrites
+//
+
+@internal-divider-icon-image:                   "@{images-path}backgrounds/divider-icon.svg";
+@internal-form-select-image:                    "@{images-path}backgrounds/form-select.svg";
+@internal-form-radio-image:                     "@{images-path}backgrounds/form-radio.svg";
+@internal-form-checkbox-image:                  "@{images-path}backgrounds/form-checkbox.svg";
+@internal-form-checkbox-indeterminate-image:    "@{images-path}backgrounds/form-checkbox-indeterminate.svg";
+@internal-list-bullet-image:                    "@{images-path}backgrounds/list-bullet.svg";
+@internal-nav-parent-close-image:               "@{images-path}backgrounds/nav-parent-close.svg";
+@internal-nav-parent-open-image:                "@{images-path}backgrounds/nav-parent-open.svg";
+@internal-accordion-open-image:                 "@{images-path}backgrounds/accordion-open.svg";
+@internal-accordion-close-image:                "@{images-path}backgrounds/accordion-close.svg";
+@internal-navbar-toggle-image:                  "@{images-path}components/navbar-toggle.svg";
+@internal-close-image:                          "@{images-path}components/close.svg";
+@internal-close-large-image:                    "@{images-path}compoments/close-large.svg";
+@internal-totop-image:                          "@{images-path}components/totop.svg";
+@internal-overlay-image:                        "@{images-path}components/overlay.svg";
+@internal-pagination-next-image:                "@{images-path}components/pagination-next.svg";
+@internal-pagination-previous-image:            "@{images-path}components/pagination-previous.svg";
+@internal-search-default-image:                 "@{images-path}components/search-default.svg";
+@internal-search-navbar-image:                  "@{images-path}components/search-navbar.svg";
+@internal-search-large-image:                   "@{images-path}components/search-large.svg";
+@internal-slidenav-previous-image:              "@{images-path}components/slidenav-previous.svg";
+@internal-slidenav-next-image:                  "@{images-path}components/slidenav-next.svg";
+@internal-slidenav-large-previous-image:        "@{images-path}components/slidenav-large-previous.svg";
+@internal-slidenav-large-next-image:            "@{images-path}components/slidenav-large-next.svg";
+@internal-accordion-open-image:                 "@{images-path}backgrounds/accordion-open.svg";
+@internal-accordion-close-image:                "@{images-path}backgrounds/accordion-close.svg";
+
+//
+// Master Theme Variable Overwrites
+//
+
+@internal-accordion-icon-close-image:           "@{images-path}backgrounds/accordion-close.svg";
+@internal-accordion-icon-open-image:            "@{images-path}backgrounds/accordion-open.svg";
+@internal-button-text-arrow-image:              "@{images-path}button-text-arrow.svg";
+
+//
+// Import Theme Files
+//
+
+@import "theme/_import.less";
+
+//
+// Theme
+//
+
+@import "_theme.less";
+
+//
+// Theme Style
+//
+
+@import (optional) "theme/styles/@{internal-style}.less";
+
+//
+// Variables && Variable Overwrites
+//
+
+// Theme customisations
+@import (optional) "../_theme.less";

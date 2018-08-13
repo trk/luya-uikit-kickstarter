@@ -3,23 +3,13 @@
     "description": "The uikit kickstarter project for a new LUYA application (use only uikit content blocks).",
     "type": "luya-uikit-kickstarter",
     "license":"MIT",
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../packages/trk-luya-uikit"
-        },
-        {
-            "type": "path",
-            "url": "../../packages/trk-luya-theme"
-        }
-    ],
     "require": {
         "luyadev/luya-core" : "dev-master",
         "luyadev/luya-module-admin" : "dev-master",
         "luyadev/luya-module-cms" : "dev-master",
-        "luyadev/luya-module-errorapi": "dev-master",
         "trk/luya-uikit" : "dev-master",
-        "trk/luya-theme" : "dev-master"
+        "trk/luya-theme" : "dev-master",
+        "ext-json": "*"
     },
     "require-dev": {
         "yiisoft/yii2-gii" : "~2.0.0",
@@ -57,4 +47,3 @@
         }
     }
 }
-

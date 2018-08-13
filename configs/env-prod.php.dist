@@ -1,0 +1,34 @@
+<?php
+
+/*
+ * ENV: production
+ */
+
+/*
+ * Production ENV Configs
+ */
+$config = [
+    'components' => [
+        'db' => [
+            'class' => 'yii\db\Connection',
+            'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
+            // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock', // OSX MAMP
+            // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock', // OSX XAMPP
+            'username' => '',
+            'password' => '',
+            'charset' => 'utf8',
+            'enableSchemaCache' => true,
+            'schemaCacheDuration' => 43200,
+        ],
+        'cache' => [
+            'class' => 'yii\caching\FileCache'
+        ]
+    ]
+];
+
+/*
+ * Content Compression Config
+ */
+$config['modules']['cms']['contentCompression'] = true;
+
+return $config;

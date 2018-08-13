@@ -1,14 +1,19 @@
-# folders and files
+# Ignore: folders and files
 /vendor
 /bin
 /runtime
 /luya
 composer.phar
 .DS_Store
+.env
+/docker/.env
+/.env
 
-# project config
-/configs/env-local-db.php
-/configs/env.php
+# Ignore: configs
+/configs/*.php
+
+# Ignore: node_modules
+**/node_modules
 
 # SASS & GULP
 /resources/.sass-cache

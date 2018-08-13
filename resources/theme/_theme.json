@@ -1,0 +1,12 @@
+{
+  "name": "uikit",
+  "title": "Uikit",
+  "styles": {
+    "default": {
+      "name": "Default",
+      "background": "White",
+      "color": "Blue",
+      "type": "Flat"
+    }
+  }
+}
